@@ -29,6 +29,8 @@ pandas
 scikit-learn
 matplotlib
 seaborn
+```
+
 Then, install the packages:
 
 pip install -r requirements.txt
