@@ -33,24 +33,35 @@ seaborn
 
 Then, install the packages:
 
+```bash
 pip install -r requirements.txt
-🚀 Usage
-Data: Ensure you have a CSV file named sample1.csv in the same directory as the script (or update the file path in the code).
-Run: Execute the main script:
+```
+
+## 🚀 Usage
+
+1.  **Data:** Ensure you have a CSV file named `sample1.csv` in the same directory as the script (or update the file path in the code).
+2.  **Run:** Execute the main script:
+
+```bash
 python main.py
-Output: The script will generate a visualization window displaying the anomalies detected by each model and print statistical summaries to the console.
-🔬 Methodology
-1. Isolation Forest
+```
+
+3.  **Output:** The script will generate a visualization window displaying the anomalies detected by each model and print statistical summaries to the console.
+
+## 🔬 Methodology
+
+### 1. Isolation Forest
 An ensemble method that isolates anomalies by randomly selecting a feature and then randomly selecting a split value between the maximum and minimum values of the selected feature.
 
-2. Local Outlier Factor (LOF)
+### 2. Local Outlier Factor (LOF)
 A density-based algorithm that calculates the local density deviation of a given data point with respect to its neighbors. It is particularly effective for detecting local anomalies.
 
-3. Ensemble Strategy
+### 3. Ensemble Strategy
 The final prediction is determined by taking the average of the binary predictions from both models. If the average score is greater than or equal to 0.5, the data point is classified as an anomaly.
 
-4. Sensitivity Analysis
+### 4. Sensitivity Analysis
 The code includes a sensitivity analysis loop that tests the model's performance under different contamination levels (e.g., 0.05, 0.1, 0.15) to ensure robustness.
 
-📄 License
+## 📄 License
+
 This code is provided for academic and research purposes.
